@@ -1,0 +1,46 @@
+/*
+ *  Transformation mixins
+ * --------------------------------------------------*/
+
+@mixin pxl-transition($transition...){
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+  
+@mixin pxl-translateX($x){
+    -webkit-transform: translateX($x);
+    -ms-transform: translateX($x); // IE9 only
+    -o-transform: translateX($x);
+    transform: translateX($x);
+}
+  
+@mixin pxl-translateY($y){
+    -webkit-transform: translateY($y);
+    -ms-transform: translateY($y); // IE9 only
+    -o-transform: translateY($y);
+    transform: translateY($y);
+}
+  
+@mixin pxl-translateZ($z){
+    -webkit-transform: translateZ($z);
+    -ms-transform: translateZ($z); // IE9 only
+    -o-transform: translateZ($z);
+    transform: translateZ($z);
+}
+  
+@mixin pxl-transform($transf...){
+    // multiple transformations are performed from right to left (matrix multiplication)
+    -webkit-transform:   $transf;
+    -moz-transform: 	 $transf;
+    -ms-transform: 		 $transf;
+    -o-transform: 		 $transf;
+    transform:           $transf;
+}
+  
+@mixin pxl-transform-style($style: flat){ // flat | preserve-3d
+    -webkit-transform-style: $style;
+    -moz-transform-style: $style; /** fixes non transitive 3d from parent and child **/
+    transform-style: $style;
+}
+  
