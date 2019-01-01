@@ -1,23 +1,26 @@
 {
   "name": "nancys",
   "version": "1.0.0",
-  "description": "My fantastic Nuxt.js project",
+  "description": "Das Coiffure-Geschäft für die Haut- und Haarpflege",
   "author": "Ralph Moser",
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "dev-debug": "node --debug node_modules/.bin/nuxt",
+    "debug": "node --inspect node_modules/.bin/nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/content": "^0.2.5",
     "@nuxtjs/markdownit": "^1.2.3",
     "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.0.0-beta",
     "cross-env": "^5.2.0",
     "nuxt": "^2.0.0",
-    "vue-lazyload": "^1.2.6"
+    "vue-lazyload": "^1.2.6",
+    "vue-masonry": "^0.11.7",
+    "vue-no-ssr": "^1.1.1"
   },
   "devDependencies": {
     "eslint-config-prettier": "^3.1.0",

@@ -1,7 +1,7 @@
 <template>
   <div>
     <AppNavigation v-bind:fluid="fluid"/>
-    <b-container v-bind:fluid="fluid">
+    <b-container>
       <nuxt/>
     </b-container>
     <AppFooter v-bind:fluid="fluid"/>
@@ -14,7 +14,7 @@ import AppFooter from '~/components/AppFooter'
 
 export default  {
   components: { AppNavigation, AppFooter },
-  data: function() {
+  data() {
     return {
       fluid: true
     }

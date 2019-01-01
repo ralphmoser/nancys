@@ -56,14 +56,15 @@ $pxl-color-glow: #40856D;
 //
 // responsive font size with minimum, medium and maximum size
 @mixin pxl-font-size-responsive($min-size: $resp-text-size-min, $med-size: $resp-text-size-med, $max-size: $resp-text-size-max){
-  $min-max-breakpoint: unit((48 * $min-size / $med-size), em);
+  // convert breakpoint to em
+  $min-max-breakpoint: 0em + 48 * $min-size / $med-size;
 
   // min font size
   font-size: $min-size;
 
-  // dynamic font size
+  // dynamic font size depending on viewport width
   @media screen and (min-width: $min-max-breakpoint) {
-    font-size: unit($med-size/7.68, vw);
+    font-size: ($med-size/7.68px)*1vw;
   }
   // med. font size
   @include media-breakpoint-up(md) {
@@ -96,7 +97,7 @@ $pxl-color-glow: #40856D;
 }
 
 @mixin pxl-text(){
-  font-family: $pxl-text-font;
+  font-family: $pxl-text-font-light;
   @include pxl-font-size-responsive();
   letter-spacing: $text-letter-spacing;
   line-height: $text-line-height;
@@ -179,8 +180,8 @@ $pxl-color-glow: #40856D;
     color: $link-color;
 
     @include hover-focus {
-      color: $link-color-hover;
-      text-decoration: $link-decoration-hover;
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration;
       background: none;
     }
   }

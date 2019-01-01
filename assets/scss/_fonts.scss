@@ -22,18 +22,18 @@ $fa-font-path: "#{$pxl-font-path}/font-awesome/fonts"; // override fa font path 
 $pxl-icon-font: 'fontawesome';
 
 // title font
-$pxl-title-font: 'SohoGothicProBold';
-$pxl-subtitle-font: 'SohoGothicProBold';
+$pxl-title-font: 'ExoBold';
+$pxl-subtitle-font: 'ExoBold';
 
 // text fonts
-$pxl-text-font: 'SohoGothicProRegular';
-$pxl-text-font-light: 'SohoGothicProLight';
+$pxl-text-font: 'ExoRegular';
+$pxl-text-font-light: 'ExoLight';
 $pxl-text-font-medium: $pxl-text-font;
-$pxl-text-font-bold: 'SohoGothicProBold';
-$pxl-text-font-italic: $pxl-text-font;
-$pxl-text-font-light-italic: 'SohoGothicProLight';
-$pxl-text-font-medium-italic: $pxl-text-font;
-$pxl-text-font-bold-italic: 'SohoGothicProBold';
+$pxl-text-font-bold: 'ExoBold';
+$pxl-text-font-italic: 'ExoRegularItalic';
+$pxl-text-font-light-italic: 'ExoLightItalic';
+$pxl-text-font-medium-italic: $pxl-text-font-italic;
+$pxl-text-font-bold-italic: 'ExoBoldItalic';
 
 // form font
 $pxl-form-font: $pxl-text-font;
@@ -48,29 +48,59 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mon
 // Font faces
 //
 @font-face {
-  font-family: 'SohoGothicProRegular';
-  src: url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.eot');
-  src: url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.eot') format('embedded-opentype'),
-  url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.woff2') format('woff2'),
-  url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.woff') format('woff'),
-  url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.ttf') format('truetype'),
-  url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.svg#SohoGothicProRegular') format('svg');
+  font-family: 'ExoRegular';
+  src: url('#{$pxl-font-path}/Exo-Regular/Exo-Regular-webfont.eot');
+  src: url('#{$pxl-font-path}/Exo-Regular/Exo-Regular-webfont.eot') format('embedded-opentype'),
+  //url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.woff2') format('woff2'),
+  url('#{$pxl-font-path}/Exo-Regular/Exo-Regular-webfont.woff') format('woff'),
+  url('#{$pxl-font-path}/Exo-Regular/Exo-Regular-webfont.ttf') format('truetype'),
+  url('#{$pxl-font-path}/Exo-Regular/Exo-Regular-webfont.svg#ExoRegular') format('svg');
 }
 @font-face {
-  font-family: 'SohoGothicProLight';
-  src: url('#{$pxl-font-path}/SohoGothicProLight/SohoGothicProLight.eot');
-  src: url('#{$pxl-font-path}/SohoGothicProLight/SohoGothicProLight.eot') format('embedded-opentype'),
-  url('#{$pxl-font-path}/SohoGothicProLight/SohoGothicProLight.woff2') format('woff2'),
-  url('#{$pxl-font-path}/SohoGothicProLight/SohoGothicProLight.woff') format('woff'),
-  url('#{$pxl-font-path}/SohoGothicProLight/SohoGothicProLight.ttf') format('truetype'),
-  url('#{$pxl-font-path}/SohoGothicProLight/SohoGothicProLight.svg#SohoGothicProLight') format('svg');
+  font-family: 'ExoRegularItalic';
+  src: url('#{$pxl-font-path}/Exo-Regular-Italic/Exo-Regular-Italic-webfont.eot');
+  src: url('#{$pxl-font-path}/Exo-Regular-Italic/Exo-Regular-Italic-webfont.eot') format('embedded-opentype'),
+  //url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.woff2') format('woff2'),
+  url('#{$pxl-font-path}/Exo-Regular-Italic/Exo-Regular-Italic-webfont.woff') format('woff'),
+  url('#{$pxl-font-path}/Exo-Regular-Italic/Exo-Regular-Italic-webfont.ttf') format('truetype'),
+  url('#{$pxl-font-path}/Exo-Regular-Italic/Exo-Regular-Italic-webfont.svg#ExoRegularItalic') format('svg');
+}
+
+@font-face {
+  font-family: 'ExoLight';
+  src: url('#{$pxl-font-path}/Exo-Light/Exo-Light-webfont.eot');
+  src: url('#{$pxl-font-path}/Exo-Light/Exo-Light-webfont.eot') format('embedded-opentype'),
+  //url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.woff2') format('woff2'),
+  url('#{$pxl-font-path}/Exo-Light/Exo-Light-webfont.woff') format('woff'),
+  url('#{$pxl-font-path}/Exo-Light/Exo-Light-webfont.ttf') format('truetype'),
+  url('#{$pxl-font-path}/Exo-Light/Exo-Light-webfont.svg#ExoLight') format('svg');
+}
+
+@font-face {
+  font-family: 'ExoLightItalic';
+  src: url('#{$pxl-font-path}/Exo-Light-Italic/Exo-Light-Italic-webfont.eot');
+  src: url('#{$pxl-font-path}/Exo-Light-Italic/Exo-Light-Italic-webfont.eot') format('embedded-opentype'),
+  //url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.woff2') format('woff2'),
+  url('#{$pxl-font-path}/Exo-Light-Italic/Exo-Light-Italic-webfont.woff') format('woff'),
+  url('#{$pxl-font-path}/Exo-Light-Italic/Exo-Light-Italic-webfont.ttf') format('truetype'),
+  url('#{$pxl-font-path}/Exo-Light-Italic/Exo-Light-Italic-webfont.svg#ExoLightItalic') format('svg');
 }
 @font-face {
-  font-family: 'SohoGothicProBold';
-  src: url('#{$pxl-font-path}/SohoGothicProBold/SohoGothicProBold.eot');
-  src: url('#{$pxl-font-path}/SohoGothicProBold/SohoGothicProBold.eot') format('embedded-opentype'),
-  url('#{$pxl-font-path}/SohoGothicProBold/SohoGothicProBold.woff2') format('woff2'),
-  url('#{$pxl-font-path}/SohoGothicProBold/SohoGothicProBold.woff') format('woff'),
-  url('#{$pxl-font-path}/SohoGothicProBold/SohoGothicProBold.ttf') format('truetype'),
-  url('#{$pxl-font-path}/SohoGothicProBold/SohoGothicProBold.svg#SohoGothicProBold') format('svg');
+  font-family: 'ExoBold';
+  src: url('#{$pxl-font-path}/Exo-Bold/Exo-Bold-webfont.eot');
+  src: url('#{$pxl-font-path}/Exo-Bold/Exo-Bold-webfont.eot') format('embedded-opentype'),
+  //url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.woff2') format('woff2'),
+  url('#{$pxl-font-path}/Exo-Bold/Exo-Bold-webfont.woff') format('woff'),
+  url('#{$pxl-font-path}/Exo-Bold/Exo-Bold-webfont.ttf') format('truetype'),
+  url('#{$pxl-font-path}/Exo-Bold/Exo-Bold-webfont.svg#ExoBold') format('svg');
+}
+
+@font-face {
+  font-family: 'ExoBoldItalic';
+  src: url('#{$pxl-font-path}/Exo-Bold-Italic/Exo-Bold-Italic-webfont.eot');
+  src: url('#{$pxl-font-path}/Exo-Bold-Italic/Exo-Bold-Italic-webfont.eot') format('embedded-opentype'),
+  //url('#{$pxl-font-path}/SohoGothicProRegular/SohoGothicProRegular.woff2') format('woff2'),
+  url('#{$pxl-font-path}/Exo-Bold-Italic/Exo-Bold-Italic-webfont.woff') format('woff'),
+  url('#{$pxl-font-path}/Exo-Bold-Italic/Exo-Bold-Italic-webfont.ttf') format('truetype'),
+  url('#{$pxl-font-path}/Exo-Bold-Italic/Exo-Bold-Italic-webfont.svg#ExoBoldItalic') format('svg');
 }

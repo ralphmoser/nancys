@@ -60,42 +60,44 @@ $dark:          $gray-800;
 //
 // pxl site colors
 $pxl_main: #333;
+$pxl-color-border: $gray-500;
+$pxl-color-border-active: $orange;
 
 // Body
 //
 // Settings for the `<body>` element.
 $body-bg:                   #333;
-$body-color:                $gray-900;
+$body-color:                $gray-400;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                $primary;
+$link-color:                $gray-600;
 $link-decoration:           none;
-$link-hover-color:          darken($link-color, 15%);
-$link-hover-decoration:     underline;
+$link-hover-color:          $orange;
+$link-hover-decoration:     none;
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-$text-color:             $gray-900;
+$text-color:             $gray-400;
 $text-color-disabled:    $gray-600;
 $text-muted:             $text-color-disabled;
 $text-color-form:        $text-color;
 $text-color-placeholder: $gray-500;
 
-$title-letter-spacing: 0;
+$title-letter-spacing: normal;
 $title-line-height: 1;
 $title-text-align: left;
 $title-text-align-small: left;
 
-$subtitle-letter-spacing: 0;
+$subtitle-letter-spacing: normal;
 $subtitle-line-height: 1.14em;
 $subtitle-text-align: left;
 $subtitle-text-align-small: left;
 
-$text-letter-spacing: 0;
+$text-letter-spacing: 0.02em;
 $text-line-height: 1.14em;
 $text-text-align: left;
 $text-text-align-small: left;
@@ -115,19 +117,19 @@ $form-button-text-align: center;
 
 //
 // responsive font sizes
-$resp-title-size-max:     30px;
+$resp-title-size-max:     36px;
 $resp-title-size-med:     30px;
-$resp-title-size-min:     22px;
+$resp-title-size-min:     24px;
 
-$resp-subtitle-size-max:  24px;
+$resp-subtitle-size-max:  28px;
 $resp-subtitle-size-med:  24px;
-$resp-subtitle-size-min:  18px;
+$resp-subtitle-size-min:  20px;
 
-$resp-text-size-max:      17px;
-$resp-text-size-med:      17px;
-$resp-text-size-min:      15px;
+$resp-text-size-max:      20px;
+$resp-text-size-med:      18px;
+$resp-text-size-min:      16px;
 
-$resp-subtext-size-max:   14px;
+$resp-subtext-size-max:   16px;
 $resp-subtext-size-med:   14px;
 $resp-subtext-size-min:   12px;
 

@@ -1,6 +1,6 @@
-# nancys
+# Nancys website
 
-> My fantastic Nuxt.js project
+> My first Nuxt.js project
 
 ## Build Setup
 

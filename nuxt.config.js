@@ -43,7 +43,11 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~plugins/vue-lazyload'
+    '~plugins/vue-lazyload',
+    {
+      src: '~/plugins/vue-masonry',
+      ssr: false
+    }
   ],
 
   /*
@@ -55,7 +59,7 @@ module.exports = {
     ['bootstrap-vue/nuxt', {
       css: false
     }],
-    // parse markdown files
+    // parse markdown content files
     '@nuxtjs/markdownit'
   ],
 
@@ -67,7 +71,25 @@ module.exports = {
     '@/assets/scss/custom.scss'
   ],
 
+  // [optional] markdownit options
+  // See https://github.com/markdown-it/markdown-it
+  markdownit: {
+    preset: 'default',
+    html: true,
+    linkify: true,
+    breaks: true,
+  },
+
   /*
+   ** Router configuration
+   */
+  router: {
+    base: '/',
+    linkActiveClass: 'active',
+    linkExactActiveClass: 'active-exact',
+  },
+
+   /*
    ** Build configuration
    */
   build: {

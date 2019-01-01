@@ -4,7 +4,7 @@
 
 // Variables
 // -------------------------
-$pxl-footer-height: 50px;
+$pxl-footer-height: 40px;
 
 
 // Main settings
@@ -24,6 +24,10 @@ $pxl-footer-height: 50px;
       outline: none;
       text-decoration: none;
     }
+  }
+
+  *:focus {
+    outline: none;
   }
 
 }
@@ -54,6 +58,8 @@ body {
   background-color: $body-bg;
 
   footer.footer {
+    display: flex;
+    align-items: center;
     position: absolute;
     bottom: 0;
     left: 0;
