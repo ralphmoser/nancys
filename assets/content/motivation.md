@@ -1,0 +1,3 @@
+In den vielen Jahren meiner Tätigkeit habe ich mich stetig weitergebildet, um meine noch immer ungestillte Neugier zu befriedigen...
+
+Nancy Ammann

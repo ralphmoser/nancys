@@ -32,18 +32,6 @@ $pxl-footer-height: 40px;
 
 }
 
-// 
-// page transitions
-.page-enter-active,
-.page-leave-active {
-  transition: opacity .2s
-}
-
-.page-enter,
-.page-leave-active {
-  opacity: 0
-}
-
 //
 // Document
 //
@@ -69,3 +57,21 @@ body {
     height: $pxl-footer-height;
   }
 }
+
+// 
+// Override default Page transitions
+// fading page
+/*
+.page-enter-active,
+.page-leave-active {
+  transition: opacity .3s
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0
+}
+.page-enter-to,
+.page-leave {
+  opacity: 1
+}
+*/

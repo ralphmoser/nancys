@@ -97,7 +97,7 @@ $pxl-color-glow: #40856D;
 }
 
 @mixin pxl-text(){
-  font-family: $pxl-text-font-light;
+  font-family: $pxl-text-font;
   @include pxl-font-size-responsive();
   letter-spacing: $text-letter-spacing;
   line-height: $text-line-height;
@@ -141,24 +141,25 @@ $pxl-color-glow: #40856D;
 //
 // WYSIWYG body
 @mixin pxl-wysiwyg-body() {
+  @include pxl-text();
+
   h1, h2, .pxl-title {
-    margin: 20px auto 20px;
+    margin: 1.5rem auto;
     @include pxl-title();
   }
 
   h3, .pxl-subtitle {
-    margin: 10px auto;
+    margin: 1.25rem auto;
     @include pxl-subtitle();
   }
 
   h4, h5, h6 {
-    margin: 7px auto;
+    margin: 1rem auto;
     @include pxl-text();
   }
 
   p {
-    margin: 0 0 10px;
-    @include pxl-text();
+    margin: 0 0 0.75rem;
     @include pxl-hyphenate;
   }
 
@@ -176,7 +177,6 @@ $pxl-color-glow: #40856D;
   }
 
   a {
-    @include pxl-text();
     color: $link-color;
 
     @include hover-focus {
@@ -187,17 +187,14 @@ $pxl-color-glow: #40856D;
   }
 
   pre, address, i, em {
-    @include pxl-text();
     font-family: $pxl-text-font-italic;
   }
 
   strong, b {
-    @include pxl-text();
     font-family: $pxl-text-font-bold;
   }
 
   u {
-    @include pxl-text();
     color: $link-color;
 
     @include hover-focus {
@@ -206,8 +203,12 @@ $pxl-color-glow: #40856D;
   }
 
   mark {
-    @include pxl-text();
     background-color: #ff0;
+  }
+
+  code {
+    @include pxl-subtext();
+    color: $text-color-code;
   }
 
   hr {

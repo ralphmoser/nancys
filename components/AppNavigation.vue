@@ -27,6 +27,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import "~/assets/scss/custom.scss";
+
+  nav {
+    @include pxl-text();
+  }
 
   .navbar-toggler {
     outline: none;

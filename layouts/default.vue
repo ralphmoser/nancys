@@ -2,7 +2,9 @@
   <div>
     <AppNavigation v-bind:fluid="fluid"/>
     <b-container>
-      <nuxt/>
+      <transition name="page">
+        <nuxt/>
+      </transition>
     </b-container>
     <AppFooter v-bind:fluid="fluid"/>
   </div>
@@ -21,3 +23,39 @@ export default  {
   }
 }
 </script>
+
+<style lang="scss">
+
+  .page-enter-active,
+  .page-leave-active {
+    transition: opacity 2s
+  }
+  .page-enter,
+  .page-leave-to {
+    opacity: 0
+  }
+  .page-enter-to,
+  .page-leave {
+    opacity: 1
+  }
+
+  //
+  // slide left
+  .slide-left-enter-active,
+  .slide-left-leave-active {
+    transition: transform 750ms ease-in-out;
+  }
+  .slide-left-enter {
+    transform: translateX(100%);
+  }
+  .slide-left-enter-to {
+    transform: translateX(0);
+  }
+  .slide-left-leave {
+    transform: translateX(0);
+  }
+  .slide-left-leave-to {
+    transform: translateX(-100%);
+  }
+
+</style>

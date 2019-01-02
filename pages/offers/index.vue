@@ -1,7 +1,7 @@
 <template>
   <AppSection>
-    <b-img src="/images/Nancys_Zopf.jpg" class="w-100 rounded" width="100%"></b-img>
     <no-ssr>
+      <b-img src="/images/Nancys_Zopf.jpg" class="w-100 w-md-50 rounded" width="100%"></b-img>
       <div v-masonry item-selector=".grid-item" column-width=".grid-sizer" gutter=".gutter-sizer" transition-duration="0.5s" class="grid-container">
         <div class="grid-sizer"></div>
         <div class="gutter-sizer"></div>
@@ -43,9 +43,8 @@ export default {
   // lifecycle hooks
   created () {
     // import all offers
-    const files = require.context('~/assets/markdownFiles/offers', true, /\.md$/);
+    const files = require.context('~/assets/content/offers', true, /\.md$/);
     const filenames = files.keys();
-
     for (let filename of filenames) {
       let offer = files(filename);
       this.offers.push(offer);
@@ -59,13 +58,17 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import "~/assets/scss/custom.scss";
 
   $masonry-gutter-width: 3%;
 
   .grid-container {
     margin: 3rem auto -$masonry-gutter-width;
+  }
+
+  .gutter-sizer {
+    width: $masonry-gutter-width;
   }
 
   .grid-sizer, .grid-item {
@@ -81,7 +84,23 @@ export default {
     }
   }
 
-  .gutter-sizer {
-    width: $masonry-gutter-width;
+  .grid-item {
+    @include pxl-wysiwyg-body();
+
+    em {
+      margin-bottom: 0.5rem;
+      @include pxl-subtext();
+    }
+
+    table {
+      @include pxl-subtext();
+      margin: -.5rem auto 1rem;
+      width: 100%;
+
+      th {
+        font-weight: normal;
+      }
+    }
   }
+
 </style>

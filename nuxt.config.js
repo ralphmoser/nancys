@@ -109,15 +109,15 @@ module.exports = {
    ** Customize the loading progress-bar and SPA spinner
    */
   loading: {
-    color: '#3B8070',
+    color: '#fd7e14',
     height: '2px',
     duration: 5000
   },
 
   loadingIndicator: {
     name: 'cube-grid',
-    color: '#3B8070',
-    background: 'white'
-  }
+    color: '#fd7e14',
+    background: '#333'
+  },
 
 }

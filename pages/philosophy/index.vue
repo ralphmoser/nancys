@@ -33,8 +33,8 @@
 
 <script>
 import AppSection from '~/components/AppSection.vue'
-import Quote from '~/assets/markdownFiles/Philosophie-Quote.md'
-import Descr from '~/assets/markdownFiles/Philosophie-Text.md'
+import Quote from '~/assets/content/Philosophie-Quote.md'
+import Descr from '~/assets/content/Philosophie-Text.md'
 
 export default {
   components: {
