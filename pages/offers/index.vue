@@ -22,7 +22,7 @@ export default {
     AppSection,
     'no-ssr': NoSSR
   },
-  head() {
+  head () {
     return {
       title: "Angebot - Nancys",
       meta: [
@@ -36,7 +36,7 @@ export default {
   },
   data () {
     return {
-      offers: []
+      offers: [],
     }
   },
   //
@@ -64,7 +64,7 @@ export default {
   $masonry-gutter-width: 3%;
 
   .grid-container {
-    margin: 3rem auto -$masonry-gutter-width;
+    margin: $masonry-gutter-width auto 0;
   }
 
   .gutter-sizer {

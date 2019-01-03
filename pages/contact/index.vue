@@ -2,12 +2,12 @@
   <AppSection>
     <b-row>
       <b-col cols="12" md="6">
-        <b-img src="/images/Nachhaltig3.jpg" class="d-block pb-5 w-100 rounded"></b-img>
+        <b-img src="/images/Nachhaltig3.jpg" class="d-block pb-3 w-100 rounded"></b-img>
       </b-col>
-      <b-col cols="12" md="6" class="contact align-self-sm-center pb-5" v-html="contact"></b-col>
+      <b-col cols="12" md="6" class="contact align-self-sm-center pb-3" v-html="contact"></b-col>
     </b-row>
     <b-row>
-      <b-col cols="12" md="6" class="coords pb-5" v-html="coords"></b-col>
+      <b-col cols="12" md="6" class="coords pb-3" v-html="coords"></b-col>
       <b-col cols="12" md="6" class="directions" v-html="directions"></b-col>
     </b-row>
   </AppSection>
