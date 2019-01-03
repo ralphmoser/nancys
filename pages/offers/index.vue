@@ -34,22 +34,26 @@ export default {
       ]
     }
   },
+  computed: {
+    offers: function() {
+      // import all offers
+      const files = require.context('~/assets/content/offers', true, /\.md$/);
+      const filenames = files.keys();
+      const offers = [];
+      for (let filename of filenames) {
+        let offer = files(filename);
+        offers.push(offer);
+      }
+      return offers;
+    }
+  },
   data () {
     return {
-      offers: [],
+      //offers: [],
     }
   },
   //
   // lifecycle hooks
-  created () {
-    // import all offers
-    const files = require.context('~/assets/content/offers', true, /\.md$/);
-    const filenames = files.keys();
-    for (let filename of filenames) {
-      let offer = files(filename);
-      this.offers.push(offer);
-    }
-  },
   mounted () {
     if (typeof this.$redrawVueMasonry === 'function') {
       this.$redrawVueMasonry()

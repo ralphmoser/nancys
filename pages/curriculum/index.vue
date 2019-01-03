@@ -37,21 +37,25 @@ export default {
       ]
     }
   },
-  data () {
-    return {
-      events: [],
-      motivation: Motivation,
+  computed: {
+    events: function() {
+      // import all historical events
+      const files = require.context('~/assets/content/history', true, /\.md$/);
+      const filennames = files.keys();
+      const events = [];
+    
+      for (let filename of filennames) {
+        let name = filename.replace(/^.*[\\\/]/, '');
+        name = name.replace(/\.[^/.]+$/, '');
+        let content = files(filename);
+        events.push({date: name, event: content});
+      }
+      return events;
     }
   },
-  created () {
-    // import all historical events
-    const files = require.context('~/assets/content/history', true, /\.md$/);
-    const filennames = files.keys();
-    for (let filename of filennames) {
-      let name = filename.replace(/^.*[\\\/]/, '');
-      name = name.replace(/\.[^/.]+$/, '');
-      let content = files(filename);
-      this.events.push({date: name, event: content});
+  data () {
+    return {
+      motivation: Motivation,
     }
   },
 }
