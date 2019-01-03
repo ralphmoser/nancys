@@ -43,11 +43,11 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~plugins/vue-lazyload',
+    '~/plugins/vue-lazyload',
     {
       src: '~/plugins/vue-masonry',
       ssr: false
-    }
+    },
   ],
 
   /*
@@ -56,9 +56,7 @@ module.exports = {
   modules: [,
     // Doc: https://bootstrap-vue.js.org/docs/
     // add bootstrap with custom css
-    ['bootstrap-vue/nuxt', {
-      css: false
-    }],
+    ['bootstrap-vue/nuxt', {css: false}],
     // parse markdown content files
     '@nuxtjs/markdownit'
   ],
@@ -67,8 +65,8 @@ module.exports = {
    ** Global CSS
    */
   css: [
-    // add custom SCSS file to the project
-    '@/assets/scss/custom.scss'
+    // add bootstrap css
+    '@/node_modules/bootstrap/dist/css/bootstrap.css',
   ],
 
   // [optional] markdownit options

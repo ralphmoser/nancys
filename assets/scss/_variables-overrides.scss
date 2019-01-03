@@ -59,14 +59,15 @@ $dark:          $gray-800;
 
 //
 // pxl site colors
-$pxl_main: #333;
+$pxl-color-main: #333;
+$pxl-color-second: #808080;
 $pxl-color-border: $gray-500;
 $pxl-color-border-active: $orange;
 
 // Body
 //
 // Settings for the `<body>` element.
-$body-bg:                   #333;
+$body-bg:                   $pxl-color-main;
 $body-color:                $gray-400;
 
 // Links

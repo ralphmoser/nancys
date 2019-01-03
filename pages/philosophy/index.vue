@@ -33,8 +33,8 @@
 
 <script>
 import AppSection from '~/components/AppSection.vue'
-import Quote from '~/assets/content/Philosophie-Quote.md'
-import Descr from '~/assets/content/Philosophie-Text.md'
+import Quote from '~/content/Philosophie-Quote.md'
+import Descr from '~/content/Philosophie-Text.md'
 
 export default {
   components: {
@@ -71,6 +71,7 @@ export default {
   .pullquote {
     display: block;
     padding: 2.5em 0.5em;
+    @include pxl-text();
     font-family: $pxl-text-font-italic;
     font-size: 1.25rem;
 

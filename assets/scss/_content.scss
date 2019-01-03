@@ -19,10 +19,13 @@ $pxl-footer-height: 40px;
   a {
     outline: none;
     text-decoration: none;
+    color: $link-color;
+    text-decoration: $link-decoration;
 
     @include hover-focus-active {
       outline: none;
-      text-decoration: none;
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration;
     }
   }
 
@@ -58,20 +61,3 @@ body {
   }
 }
 
-// 
-// Override default Page transitions
-// fading page
-/*
-.page-enter-active,
-.page-leave-active {
-  transition: opacity .3s
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0
-}
-.page-enter-to,
-.page-leave {
-  opacity: 1
-}
-*/

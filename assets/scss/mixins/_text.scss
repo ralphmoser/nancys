@@ -111,6 +111,7 @@ $pxl-color-glow: #40856D;
   letter-spacing: $subtext-letter-spacing;
   line-height: $subtext-line-height;
   text-align: $subtext-text-align-small;
+  color: $text-color;
 
   @include media-breakpoint-up(md) {
     text-align: $subtext-text-align;

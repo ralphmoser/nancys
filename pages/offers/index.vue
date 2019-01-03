@@ -37,7 +37,7 @@ export default {
   computed: {
     offers: function() {
       // import all offers
-      const files = require.context('~/assets/content/offers', true, /\.md$/);
+      const files = require.context('~/content/offers', true, /\.md$/);
       const filenames = files.keys();
       const offers = [];
       for (let filename of filenames) {
@@ -45,11 +45,6 @@ export default {
         offers.push(offer);
       }
       return offers;
-    }
-  },
-  data () {
-    return {
-      //offers: [],
     }
   },
   //

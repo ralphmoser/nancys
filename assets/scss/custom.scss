@@ -5,17 +5,18 @@
  */
 
 //
-// Override Variables
+// Override Variables (load before bootstrap variables,
+// see https://getbootstrap.com/docs/4.0/getting-started/theming/)
 @import "variables-overrides";
 @import "fonts";
 
 //
-// Required bootstrap files
+// Required bootstrap files such as functions, mixins and global variables
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
-@import "../../node_modules/bootstrap/scss/reboot";
+//@import "../../node_modules/bootstrap/scss/reboot";
 
 //
 // PXL mixins, functions and fonts
@@ -23,7 +24,7 @@
 @import "functions";
 @import "content";
 
-//
+/*//
 // Optional bootstrap files
 @import "../../node_modules/bootstrap/scss/grid";
 @import "../../node_modules/bootstrap/scss/type";

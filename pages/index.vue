@@ -10,9 +10,9 @@
     >
       <!-- Slides image 1 -->
       <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-75 mx-auto rounded" src="/images/Nancys_Blumen.jpg">
+        <img slot="img" class="d-block img-fluid w-75 mx-auto rounded" src="~/static/images/Nancys_Wickler.jpg">
       </b-carousel-slide>
-       <!-- Slides image 2 -->
+      <!-- Slides image 2 -->
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-75 mx-auto rounded" src="/images/Nancys_Haare.jpg">
       </b-carousel-slide>
@@ -27,10 +27,6 @@
       <!-- Slides image 5 -->
       <b-carousel-slide>
         <img slot="img" class="d-block img-fluid w-75 mx-auto rounded" src="/images/Nancys_Schnitt.jpg">
-      </b-carousel-slide>
-      <!-- Slides image 6 -->
-      <b-carousel-slide>
-        <img slot="img" class="d-block img-fluid w-75 mx-auto rounded" src="/images/Nancys_Wickler.jpg">
       </b-carousel-slide>
    </b-carousel>
     <div class="slogan">{{slogan}}</div>
@@ -47,7 +43,7 @@ export default {
   },
   head() {
     return {
-      title: "Angebot - Nancys",
+      title: "Nancys",
       description: "Nancy's, das Coiffure-Geschäft für die Haut- und Haarpflege. Fühlen sie sich wohl in einer entspannenden, hellen und privaten Atmosphäre."
     }
   },

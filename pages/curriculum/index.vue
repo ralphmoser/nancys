@@ -2,7 +2,7 @@
   <AppSection>
     <b-row>
       <b-col cols="12" md="4" class="align-self-sm-center pb-5">
-        <b-img src="/images/Nancys_Nancy1.jpg" class="portrait mx-auto w-100 rounded"></b-img>
+        <b-img src="/images/Nancy_green.jpg" class="portrait mx-auto w-100 rounded"></b-img>
       </b-col>
       <b-col cols="12" md="8">
         <b-row class="events" v-for="(event, index) in events" :key="index">
@@ -19,7 +19,7 @@
 
 <script>
 import AppSection from '~/components/AppSection.vue'
-import Motivation from '~/assets/content/motivation.md'
+import Motivation from '~/content/motivation.md'
 
 export default {
   components: {
@@ -40,7 +40,7 @@ export default {
   computed: {
     events: function() {
       // import all historical events
-      const files = require.context('~/assets/content/history', true, /\.md$/);
+      const files = require.context('~/content/history', true, /\.md$/);
       const filennames = files.keys();
       const events = [];
     

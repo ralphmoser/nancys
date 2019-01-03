@@ -6,7 +6,7 @@
 
 <script>
 import AppSection from '~/components/AppSection.vue'
-import Impressum from "~/assets/content/Impressum.md"
+import Impressum from "~/content/Impressum.md"
 
 export default {
   components: {

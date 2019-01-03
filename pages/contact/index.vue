@@ -15,9 +15,9 @@
 
 <script>
 import AppSection from '~/components/AppSection.vue'
-import Contact from '~/assets/content/contact.md'
-import Coords from '~/assets/content/coordinates.md'
-import Directions from '~/assets/content/directions.md'
+import Contact from '~/content/contact.md'
+import Coords from '~/content/coordinates.md'
+import Directions from '~/content/directions.md'
 
 export default {
   components: {

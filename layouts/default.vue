@@ -25,6 +25,8 @@ export default  {
 </script>
 
 <style lang="scss">
+  @import "~/assets/scss/custom.scss";
+
 
   .page-enter-active,
   .page-leave-active {

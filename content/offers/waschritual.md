@@ -5,4 +5,4 @@ Die Druckpunkt-Massage befreit beim Waschen die Kopfhaut von Stoffwechselrückst
 _Waschen Schneiden Fönen_
 Kurze Haare | Lange Haare
 --- | ---
-CHF 95 | CHF 12
+CHF 95 | CHF 120
