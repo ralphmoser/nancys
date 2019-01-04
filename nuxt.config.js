@@ -44,6 +44,7 @@ module.exports = {
    */
   plugins: [
     '~/plugins/vue-lazyload',
+    //'~/plugins/fontawesome.js',
     {
       src: '~/plugins/vue-masonry',
       ssr: false
@@ -66,7 +67,9 @@ module.exports = {
    */
   css: [
     // add bootstrap css
-    '@/node_modules/bootstrap/dist/css/bootstrap.css',
+    '@/node_modules/bootstrap/dist/css/bootstrap.min.css',
+    // add fontawesome css
+    //'@fortawesome/fontawesome-svg-core/styles.css',
   ],
 
   // [optional] markdownit options

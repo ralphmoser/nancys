@@ -13,14 +13,6 @@
 // Define customer specific fonts
 $pxl-font-path: '~assets/fonts';
 
-//
-// Awesome icon font
-$fa-font-path: "#{$pxl-font-path}/font-awesome/fonts"; // override fa font path (lazy loading)
-@import "../fonts/font-awesome/scss/font-awesome";
-
-// icon font
-$pxl-icon-font: 'fontawesome';
-
 // title font
 $pxl-title-font: 'ExoRegular';
 $pxl-subtitle-font: 'ExoRegular';
