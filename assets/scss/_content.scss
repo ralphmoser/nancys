@@ -13,6 +13,8 @@ $pxl-footer-height: 40px;
 // container in general
 .container,
 .container-fluid {
+  position: relative;
+
   // sharper fonts
   @include pxl-sharp-fonts;
 

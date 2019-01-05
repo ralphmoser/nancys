@@ -121,4 +121,10 @@ module.exports = {
     background: '#333'
   },
 
+  // page transitions
+  transition: {
+    name: 'fade',
+    mode: ''
+  }
+
 }
